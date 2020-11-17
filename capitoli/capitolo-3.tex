@@ -3,30 +3,127 @@
 % !TEX root = ../tesi.tex
 
 %**************************************************************
-\chapter{Descrizione dello stage}
-\label{cap:descrizione-stage}
+\chapter{Svolgimento dello stage}
+\label{cap:svolgimento-dello-stage}
 %**************************************************************
 
-\intro{Breve introduzione al capitolo}\\
-
-%**************************************************************
-\section{Introduzione al progetto}
-
-%**************************************************************
-\section{Analisi preventiva dei rischi}
-
-Durante la fase di analisi iniziale sono stati individuati alcuni possibili rischi a cui si potrà andare incontro.
-Si è quindi proceduto a elaborare delle possibili soluzioni per far fronte a tali rischi.\\
-
-\begin{risk}{Performance del simulatore hardware}
-    \riskdescription{le performance del simulatore hardware e la comunicazione con questo potrebbero risultare lenti o non abbastanza buoni da causare il fallimento dei test}
-    \risksolution{coinvolgimento del responsabile a capo del progetto relativo il simulatore hardware}
-    \label{risk:hardware-simulator} 
-\end{risk}
-
-%**************************************************************
-\section{Requisiti e obiettivi}
-
+%\intro{Breve introduzione al capitolo}\\
 
 %**************************************************************
 \section{Pianificazione}
+
+La pianificazione si divide nelle seguenti fasi:
+\begin{itemize}
+	\item Studio del processo aziendale attuale;
+	\item Definizione dei requisiti e progettazione dell’infrastruttura;
+	\item Realizzazione dell’infrastruttura e fase di testing;
+	\item Collaudo e messa in produzione.
+\end{itemize}
+Segue tabella ore/attività.
+
+%**************************************************************
+
+
+\subsection{Interazioni con il responsabile}
+
+Almeno una volta alla settimana è stato effettuato un incontro di allineamento con il tutor aziendale per verificare l’avanzamento e chiarire eventuali dubbi o problemi
+riscontrati.
+
+%**************************************************************
+
+
+\section{Analisi dei requisiti}
+
+Le prime analisi sono state effettuate con degli incontri con il tutor aziendale, per avere una panoramica del processo aziendale. Successivamente, attraverso degli incontri con dei key users coinvolti del progetto, per capire le eventuali problematiche e più in dettaglio le singole fasi.
+Dopo aver effettuato l’analisi è emersa la necessità da parte degli utenti interni di gestire all’interno dell’ambiente del gestionale la creazione delle richieste, di conseguenza è stata progettata l’interfaccia utente in Sage X3 che lo permette (funzionalità già esistente all’interno del gestionale). In questo modo l’applicazione web sarà utilizzata dai fornitori che intendono rispondere alle offerte proposte loro.
+Attraverso una tabella di tracciamento sono stati identificati i requisiti necessari.
+
+%**************************************************************
+
+
+\section{Progettazione e codifica}
+
+\subsection{Tecnologie e strumenti utilizzati}
+
+.Net Framework è l’ambiente utilizzato per lo sviluppo dell’applicazione web. Sage X3 è il nuovo gestionale nel quale viene sviluppata l’interfaccia per gli utenti. Le basi di dati sono database SQL. I linguaggi di programmazione utilizzati sono C\# e Javascript. Per il front end ho utilizzato il framework Bootstrap.
+
+%**************************************************************
+
+
+\subsection{Interfaccia del gestionale}
+
+L’interfaccia all’interno di Sage X3 è stata progettata con il designer web del gestionale.
+Una volta appreso le nozioni basilari attraverso la documentazione disponibile, tramite un affiancamento con i fornitori del gestionale per conoscere le funzionalità già
+presenti, ho sviluppato l’interfaccia che verrà utilizzata dagli utenti per la gestione delle richieste di offerta.
+
+%**************************************************************
+
+
+\subsection{Web Services SOAP}
+
+L’applicazione web comunica con la base di dati del gestionale tramite web services SOAP. Dopo la formazione sulla tecnologia non ancora affrontata, ho creato i servizi
+necessari alla comunicazione bidirezionale tra webapp e gestionale.
+
+%**************************************************************
+
+
+\subsection{Applicazione web}
+
+Il design pattern utilizzato per la realizzazione dell’applicazione web è l’MVC.
+Per la codifica i problemi fondamentali sono stati la formazione su librerie sconosciute, come JQuery e il sistema di scripting Razor per la gestione di pagine dinamiche. 
+
+%**************************************************************
+
+
+\subsection{Reportistica}
+
+Dopo la formazione sullo strumento per la produzione di stampe Crystal Report, ho creato il dettaglio della richiesta di offerta, seguendo il modello dell’attuale modulo
+cartaceo utilizzato.
+Dopo un’analisi con il Purchase Manager, sono stati identificati dei dati interessanti al fine di migliorare il processo e mostrati su un report (es. definire l’affidabilità di un fornitore sulla base delle risposte ricevute alle offerte proposte).
+
+%**************************************************************
+
+
+\section{Verifica e validazione}
+
+Sono stati fatti vari test per verificare se venivano recuperati correttamente i dati dal gestionale all’applicazione web e viceversa. Inoltre, sono stati effettuati test sul corretto funzionamento dell’applicazione web. I problemi riscontrati con i web services forniti da Sage X3 sono stati risolti.
+
+%**************************************************************
+
+
+\section{Consuntivo finale}
+
+\subsection{Prodotti ottenuti}
+
+I prodotti ottenuti sono i seguenti:
+
+\begin{itemize}
+	\item relazione sul processo aziendale coinvolto;
+	\item relazione sulla progettazione architetturale;
+	\item codice sorgente dell’applicazione web;
+	\item interfaccia personalizzata sul gestionale;
+	\item manuale e documentazione riguardante la struttura dell’applicazione web per
+	manutenzione ed eventuali integrazioni.
+\end{itemize}
+
+%**************************************************************
+
+\subsection{Copertura di requisiti e test}
+
+Gli obiettivi obbligatori, incentrati sull’analisi dei requisiti, progettazione e sviluppo dell’applicazione web sono stati raggiunti. I test di verifica sono stati effettuati sul codice sorgente dell’applicazione web, mentre i web services sono stati testati attraverso il modulo integrato in Sage X3.
+
+%**************************************************************
+
+%**************************************************************
+
+%\section{Analisi preventiva dei rischi}
+
+%Durante la fase di analisi iniziale sono stati individuati alcuni possibili rischi a cui si potrà andare incontro.
+%Si è quindi proceduto a elaborare delle possibili soluzioni per far fronte a tali rischi.\\
+
+%\begin{risk}{Performance del simulatore hardware}
+%    \riskdescription{le performance del simulatore hardware e la comunicazione con questo potrebbero risultare lenti o non abbastanza buoni da causare il fallimento dei test}
+%    \risksolution{coinvolgimento del responsabile a capo del progetto relativo il simulatore hardware}
+ %   \label{risk:hardware-simulator} 
+%\end{risk}
+

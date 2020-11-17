@@ -4,55 +4,116 @@
 
 %**************************************************************
 \chapter{Analisi del contesto aziendale}
-\label{cap:introduzione}
+\label{cap:analisi-del-contesto-aziendale}
 %**************************************************************
 
-Introduzione al contesto applicativo.\\
+%Introduzione al contesto applicativo.\\
 
-\noindent Esempio di utilizzo di un termine nel glossario \\
-\gls{api}. \\
+%\noindent Esempio di utilizzo di un termine nel glossario \\
+%\gls{api}. \\
 
-\noindent Esempio di citazione in linea \\
-\cite{site:agile-manifesto}. \\
+%\noindent Esempio di citazione in linea \\
+%\cite{site:agile-manifesto}. \\
 
-\noindent Esempio di citazione nel pie' di pagina \\
-citazione\footcite{womak:lean-thinking} \\
+%\noindent Esempio di citazione nel pie' di pagina \\
+%citazione\footcite{womak:lean-thinking} \\
 
 %**************************************************************
-\section{L’azienda San Marco Group}
+\section{L'azienda San Marco Group}
 
-San Marco Group è un gruppo aziendale leader in Italia nella produzione di pitture e vernici per l’edilizia professionale. Il Gruppo con sede principale a Marcon (VE) oggi conta 8 siti produttivi ed è proprietario di 7 diversi brand, ha un fatturato pari a 80 milioni di euro e una rete distributiva che tocca oltre 100 Paesi.
-
+San Marco Group è un gruppo aziendale leader in Italia nella produzione di pitture e vernici per l'edilizia professionale. Il Gruppo con sede principale a Marcon (VE) conta 300 dipendenti, è proprietario di 8 diversi brand, ha un fatturato pari a 80 milioni di euro e una rete distributiva che tocca oltre 100 Paesi. Tutti i prodotti vengono progettati negli stabilimenti italiani, mentre la produzione si divide tra Italia, Bosnia e Russia, con un totale di 7 stabilimenti produttivi che producono per tutti i brand del gruppo.
+I clienti si collocano sia nel settore privato, come piccoli e grandi professionisti del settore dell'edilizia, che in quello pubblico.
 %**************************************************************
 \section{Organizzazione del lavoro}
 
-Introduzione all'idea dello stage.
-
-%**************************************************************
-\section{Tecnologie utilizzate}
-
-Descrizione delle tecnologie utilizzate.
-
-%**************************************************************
-\section{Organizzazione del testo}
-
-\begin{description}
-    \item[{\hyperref[cap:processi-metodologie]{Il secondo capitolo}}] descrive ...
-    
-    \item[{\hyperref[cap:descrizione-stage]{Il terzo capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:analisi-requisiti]{Il quarto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:progettazione-codifica]{Il quinto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:verifica-validazione]{Il sesto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:conclusioni]{Nel settimo capitolo}}] descrive ...
-\end{description}
-
-Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
+L'ufficio IT che si occupa di gestire la struttura IT aziendale è così strutturato:
 \begin{itemize}
-	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
-	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \emph{parola}\glsfirstoccur;
-	\item i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \emph{corsivo}.
+	\item 4 sviluppatori, figure tecniche specializzate che si occupano a 360 gradi delle attività dell'ufficio; 
+	\item 1 IT manager, responsabile della gestione, manutenzione ed esercizio dei sistemi informativi all'interno dell'azienda; 
+	\item 1 CIO, responsabile aziendale delle tecnologie dell'informazione e della comunicazione.
 \end{itemize}
+Di seguito sono descritti i principali processi aziendali e gli strumenti utilizzati per il loro supporto.
+
+
+%**************************************************************
+\subsection{Assistenza}
+
+Il servizio di assistenza è essenziale per supportare gli utenti nello svolgimento delle loro mansioni, dagli operai agli impiegati negli uffici. Visto il bacino di utenza, 150 utenti solo nella sede principale di Marcon (VE), l'assistenza di primo livello relativa a problematiche sia software che hardware viene fornita da un'azienda esterna, specializzata nel servizio di help desk. Rimane compito dei membri dell'ufficio IT la gestione delle problematiche relative al gestionale aziendale, che ne conoscono la struttura e sono formati per intervenire sia a livello di programmazione che di gestione di \textit{incident}. 
+
+
+%**************************************************************
+
+\subsubsection{Strumenti di supporto}
+
+Per gestire al meglio le richieste di assistenza interna, viene utilizzato un servizio di ticketing interno, Web Help Desk, che attraverso un portale web permette la creazione di richieste da parte degli utenti e la facile gestione delle stesse dai tecnici. Oltre a fornire supporto nel controllo dei ticket, questo strumento offre funzionalità avanzate come la gestione degli \textit{assets}, la creazione di FAQ con le soluzioni dei problemi già risolti e l'automatizzazione di processi (es. \textit{Change Management}).
+
+%**************************************************************
+
+\subsection{Sviluppo}
+
+Per quanto riguarda l'attività di sviluppo, si divide principalmente in: 
+\begin{itemize}
+	\item sviluppi software; 
+	\item programmazione su applicativi esistenti.
+\end{itemize}
+Gli sviluppi software riguardano gli applicativi utilizzati internamente (es. CRM interno). Prima di iniziare lo sviluppo si opera una raccolta dei requisiti attraverso un'analisi preliminare effettuata con i \textit{process owner} delle attività aziendali coinvolte e con gli utenti finali per capire le problematiche più comuni. In seguito si sottopongono il risultato dell'analisi e un breve studio di fattibilità, sulla base delle tecnologie da utilizzare e sull'impegno richiesto, all'IT manager e al CIO. Una volta ricevuta l'approvazione, si procede con lo sviluppo. 
+Altro tipo di sviluppo sono invece le richieste che possono riguardare programmazione di query generiche, sviluppo di cruscotti per la \textit{Business Intelligence}, modifiche ad alcune funzionalità nel gestionale o sviluppo di web services. In questo caso gli sviluppatori, debitamente formati, riescono a gestire le richieste in autonomia con la sola supervisione dell'IT manager
+
+
+%**************************************************************
+
+\subsubsection{Strumenti di supporto}
+
+Per quanto riguarda la gestione della configurazione, tutti i progetti aziendali sono conservati in un \textit{repository} interno, completi di documentazione. Si fa affidamento a Github come strumento di controllo versione, che permette a più sviluppatori di lavorare parallelamente sullo stesso progetto. 
+I principali linguaggi utilizzati per lo sviluppo di nuovi software sono C\# e Java. 
+Si fa affidamento all'ambiente .NET Framework per lo sviluppo degli applicativi, visto soprattutto le integrazioni disponibili con gli altri prodotti Microsoft utilizzati all'interno dell'azienda. 
+Per quanto riguarda la persistenza dei dati è utilizzato principalmente SQLServer. 
+Per il front end viene adottato principalmente il framework Bootstrap, perché semplifica la creazione di siti ed applicazioni web, oltre a supportare il responsive web design, permettendo che il layout delle pagine web si regoli dinamicamente, essendoci la necessità di rendere gli applicativi fruibili sia da desktop che da dispositivi tablet presenti nei reparti di produzione.
+%**************************************************************
+
+\subsection{Manutenzione}
+ 
+ \subsubsection{Manutenzione del software}
+ Una volta terminato lo sviluppo di un prodotto software, viene effettuato un rilascio in un ambiente di test per un periodo indicativo di due settimane. Una volta effettuati i dovuti test, avviene il rilascio ufficiale in produzione. 
+ Successivamente, viene svolta l'attività di manutenzione per tutta la vita del software, riadattando nuove funzionalità in base alle esigenze degli utenti che lo utilizzano e applicando correzioni dove necessario.
+ 
+ \subsubsection{Manutenzione sistemistica}
+ 
+Sono gestiti internamente tutti gli aspetti di natura sistemistica, con il supporto di aziende esterne soprattutto nell'ambito della sicurezza informatica e nella gestione delle infrastrutture. Tutti i membri dell'IT sono infatti formati in modo tale da supportare i tecnici esterni negli interventi che svolgono sull' infrastruttura aziendale.
+
+%**************************************************************
+
+
+\section{Propensione all'innovazione}
+
+L'azienda si impegna nella ricerca di nuovi strumenti e processi che permettano di migliorare il modo di lavorare portando beneficio ai dipendenti e all'azienda stessa. 
+Questo si manifesta attraverso l'investimento in corsi di formazione per migliorare lo \textit{smart working}, l'introduzione di applicativi come Microsoft Teams per incrementare l'efficienza del lavoro di gruppo e l'implementazione di un sistema di comunicazione VOIP che permette ai dipendenti l'utilizzo del telefono dell'ufficio attraverso un dispositivo personale mentre sono in \textit{smart working}. 
+Non sono state prese iniziative solamente per reagire alle necessità della situazione che stiamo vivendo, infatti l'azienda si sta dirigendo sempre di più verso una gestione cloud dei servizi e all'utilizzo esteso di Microsoft Office 365 e di Sharepoint Online, una soluzione per la collaborazione e la condivisione di documenti e informazioni, che è andata a sostituire quasi completamente l'archiviazione sui NAS (dispositivi fisici collegati in rete che permettono l'archiviazione e la condivisione di file).
+
+
+%**************************************************************
+
+
+
+%\section{Organizzazione del testo}
+
+%\begin{description}
+%    \item[{\hyperref[cap:processi-metodologie]{Il secondo capitolo}}] descrive %...
+%    
+%    \item[{\hyperref[cap:descrizione-stage]{Il terzo capitolo}}] approfondisce %...
+%    
+%    \item[{\hyperref[cap:analisi-requisiti]{Il quarto capitolo}}] %approfondisce ...
+%    
+%    \item[{\hyperref[cap:progettazione-codifica]{Il quinto capitolo}}] %approfondisce ...
+%    
+%    \item[{\hyperref[cap:verifica-validazione]{Il sesto capitolo}}] approfondisce ...
+%    
+%    \item[{\hyperref[cap:conclusioni]{Nel settimo capitolo}}] descrive ...
+%\end{description}
+
+%Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
+%\begin{itemize}
+%	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
+%	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \emph{parola}\glsfirstoccur;
+%	\item i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \emph{corsivo}.
+%\end{itemize}
