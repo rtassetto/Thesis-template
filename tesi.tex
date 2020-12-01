@@ -22,8 +22,8 @@
 % PDF/A filecontents
 \RequirePackage{filecontents}
 \begin{filecontents*}{\jobname.xmpdata}
-  \Title{Document’s title}
-  \Author{Author’s name}
+  \Title{Document's title}
+  \Author{Author's name}
   \Language{it-IT}
   \Subject{The abstract, or short description.}
   \Keywords{keyword1\sep keyword2\sep keyword3}
@@ -74,7 +74,7 @@
 
 \usepackage{eurosym}                    % simbolo dell'euro
 
-%\usepackage{indentfirst}               % rientra il primo paragrafo di ogni sezione
+\usepackage{indentfirst}               % rientra il primo paragrafo di ogni sezione
 
 \usepackage{graphicx}                   % immagini
 
@@ -135,10 +135,10 @@
 % Materiale principale
 %**************************************************************
 \mainmatter
-\input{capitoli/capitolo-1}             % Introduzione
-\input{capitoli/capitolo-2}             % Processi
-\input{capitoli/capitolo-3}             % Kick-Off
-%\input{capitoli/capitolo-4}             % Concept Preview
+\input{capitoli/capitolo-1}             % Introduzione azienda
+\input{capitoli/capitolo-2}             % Presentazione stage
+\input{capitoli/capitolo-3}             % Svolgimento stage
+%\input{capitoli/capitolo-4}             % Valutazioni personali
 %\input{capitoli/capitolo-5}             % Product Prototype
 %\input{capitoli/capitolo-6}             % Product Design Freeze e SOP
 %\input{capitoli/capitolo-7}             % Conclusioni
@@ -148,7 +148,7 @@
 %**************************************************************
 % Materiale finale
 %**************************************************************
-%\backmatter
-%\printglossaries
-%\input{inizio-fine/bibliografia}
+\backmatter
+\printglossaries
+\input{inizio-fine/bibliografia}
 \end{document}

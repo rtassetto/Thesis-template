@@ -16,7 +16,7 @@ In primo luogo, viene considerata la sperimentazione di nuove tecnologie ed il l
 Ci sono diverse realtà all'interno dell'azienda che possono considerarsi formative per uno studente e che attuano costantemente questa collaborazione:
 \begin{itemize}
 	\item \textbf{l'ufficio Risorse Umane}, dove studenti del settore giuridico o umanistico possono crescere trovandosi in un'azienda con un grande gruppo eterogeneo di membri; 
-	\item \textbf{l'ufficio Marketing}, molto sviluppato nell'azienda che dà spazio a figure che hanno intrapreso studi in ambito grafico o orientati alle comunicazioni e al marketing web;
+	\item \textbf{l'ufficio Marketing}, molto sviluppato nell'azienda che dà spazio a figure che hanno intrapreso studi in ambito grafico o orientati alle comunicazioni e al \textit{marketing web};
 	\item \textbf{il laboratorio di Ricerca e Sviluppo}, la sezione, presente nella sede di Marcon, affianca studenti del settore chimico ad un gruppo di chimici \textit{senior} che svolge attività di studio e ricerca su pitture decorative e decorativi per pavimenti, prodotti per le facciate, rivestimenti e sistemi termoisolanti; 
 	\item \textbf{i Back office}, che comprendono l'ufficio Acquisti e l'ufficio Commerciale, dove studenti nel settore economico e commerciale hanno modo di confrontarsi con una realtà molto sviluppata e affermata nel territorio.
 \end{itemize}
@@ -31,7 +31,7 @@ Attualmente l'azienda è nel vivo di un progetto di cambio gestionale, motivato 
 	\item insoddisfazione da parte della direzione sul prodotto.
 \end{itemize}
 Nonostante ci fosse la possibilità di continuare ad utilizzare la versione 2009 anche oltre alla fine del supporto, affidandosi ad un partner terzo per la manutenzione e le implementazioni dei vari adeguamenti necessari a soddisfare periodicamente le regole stabilite nel contesto fiscale, tale decisione è stata ritenuta troppo rischiosa perché in caso di inadempienze del partner scelto, ci sarebbero potute essere conseguenze importanti per l'azienda, come ad esempio l'impossibilità di adempiere agli obblighi fiscali.
-Si è deciso quindi di effettuare l'analisi di tutti i processi aziendali così da individuarne le criticità: in questo modo il cambio di software non avrebbe solamente soddisfatto le necessità ma anche portato un miglioramento. In seguito all'analisi supportata da un'azienda di consulenza, è iniziata la \textit{software selection}.
+Si è deciso quindi di effettuare l'analisi di tutti i processi aziendali così da individuarne le criticità: in questo modo il cambio di \textit{software} non avrebbe solamente soddisfatto le necessità ma anche portato un miglioramento. In seguito all'analisi supportata da un'azienda di consulenza, è iniziata la \textit{software selection}.
 
 \vspace{10pt}
 \begin{figure}[htbp]
@@ -42,13 +42,13 @@ Si è deciso quindi di effettuare l'analisi di tutti i processi aziendali così 
 \end{figure}
 \vspace{10pt}
 
-Tra i vari software gestionali presenti sul mercato, è stato preso in considerazione \textit{Microsoft Dynamics 365}. La nuova versione dell'\textit{ERP} di \textit{Microsoft} differisce in maniera sostanziale da quella attualmente utilizzata, principalmente per quanto riguarda:
+Tra i vari \textit{software} gestionali presenti sul mercato, è stato preso in considerazione \textit{Microsoft Dynamics 365}. La nuova versione dell'\textit{ERP} di \textit{Microsoft} differisce in maniera sostanziale da quella attualmente utilizzata, principalmente per quanto riguarda:
 \begin{itemize}
 	\item la re-ingegnerizzazione della base di dati, che richiederebbe una reimpostazione radicale della base di dati attuale;
 	\item la dismissione del modello di sviluppo a \textit{layer}, che consiste nell'utilizzo di una gerarchia di livelli nei quali vengono implementati i metodi degli elementi applicativi presenti nel gestionale. Quando viene eseguito un metodo di un qualsiasi elemento applicativo, il sistema parte dal \textit{layer} più esterno per verificare ed eseguire, se disponibile, un'implementazione del metodo per quell'elemento, altrimenti si sposta sul \textit{layer} più interno per ripetere l'operazione fino ad arrivare al \textit{layer} di sistema.In questo modo è possibile personalizzare facilmente le varie funzionalità presenti, attività che con la nuova versione richiederebbero un processo più impegnativo.
 \end{itemize}
 L'adozione di \textit{Microsoft Dynamics 365} sarebbe stata troppo impegnativa dal punto di vista tecnico sia nel breve che nel lungo termine, per questo motivo è stato scartato.
-Alla fine della valutazione la scelta è ricaduta su Sage X3, per la sua adattabilità e perché rispecchia maggiormente le necessità aziendali; è perciò iniziata la fase di implementazione del nuovo software attraverso:
+Alla fine della valutazione la scelta è ricaduta su Sage X3, per la sua adattabilità e perché rispecchia maggiormente le necessità aziendali; è perciò iniziata la fase di implementazione del nuovo \textit{software} attraverso:
 
 \begin{itemize}
 	\item sviluppi per adeguamento delle funzionalità del nuovo gestionale agli standard aziendali;
@@ -70,25 +70,25 @@ Alla fine della valutazione la scelta è ricaduta su Sage X3, per la sua adattab
 %**************************************************************
 \section{Proposta di stage}
 
-Lo scopo dello stage consisteva nello sviluppo software di un sistema di gestione di offerte di fornitura, dedicate a beni materiali e servizi. Dopo l'analisi del processo, dovevo sviluppare un'applicazione web che permettesse agli utenti interni la gestione delle richieste e ai fornitori designati di rispondere con delle proposte di offerta.
+Lo scopo dello stage consisteva nello sviluppo \textit{software} di un sistema di gestione di offerte di fornitura, dedicate a beni materiali e servizi. Dopo l'analisi del processo, dovevo sviluppare un'applicazione \textit{web} che permettesse agli utenti interni la gestione delle richieste e ai fornitori designati di rispondere con delle proposte di offerta.
 L'applicazione da sviluppare doveva avere le seguenti caratteristiche:
 \begin{itemize}
-	\item interfacciarsi con il database del gestionale tramite \textit{web services};
+	\item interfacciarsi con il database del gestionale tramite \textit{web service};
 	\item la sezione destinata alle richieste di servizio di trasporto doveva rispettare il layout del modulo cartaceo utilizzato;
 \end{itemize}
-Dovevo produrre un \textit{report} con il dettaglio della richiesta e in base al tempo disponibile, riuscire a fornire delle statistiche sulla base dei dati utilizzati, utili all'analisi di \textit{business intelligence}, in ottica di miglioramento del processo aziendale.
+Dovevo produrre un \textit{report} con il dettaglio della richiesta e in base al tempo disponibile, riuscire a fornire delle statistiche sulla base dei dati utilizzati, utili all'analisi di \textit{BI}, in ottica di miglioramento del processo aziendale.
 
 
 \subsection{Prodotti attesi}
-L'attività di stage prevedeva la produzione dei seguenti oggetti, documenti e software:
+L'attività di stage prevedeva la produzione dei seguenti oggetti, documenti e \textit{software}:
 \begin{itemize}
 	\item relazione sul processo aziendale coinvolto;
 	\item relazione sulla progettazione architetturale;
-	\item codice sorgente dell'applicazione web;
-	\item manuale e documentazione riguardante la struttura dell'applicazione web per
+	\item codice sorgente dell'applicazione \textit{web};
+	\item manuale e documentazione riguardante la struttura dell'applicazione \textit{web} per
 	manutenzione ed eventuali integrazioni;
-	\item report di dettaglio dell'offerta;
-	\item report con statistiche utili all'analisi di \textit{business intelligence}.
+	\item \textit{report} di dettaglio dell'offerta;
+	\item \textit{report} con statistiche utili all'analisi di \textit{BI}.
 \end{itemize}
 
 
@@ -124,7 +124,7 @@ La tipologia determina l'importanza di realizzare tale obiettivo, ed è scelta t
 		\hline
 		2.2-OB & Comprensione del database \textit{SQL Server}\\
 		\hline
-		2.3-OB & Comprensione della tecnologia dei \textit{web services}\\
+		2.3-OB & Comprensione della tecnologia dei \textit{web service}\\
 		\hline
 		3-OB & Comprensione delle tecnologie di \textit{frontend}\\
 		\hline
@@ -134,11 +134,11 @@ La tipologia determina l'importanza di realizzare tale obiettivo, ed è scelta t
 		\hline
 		4-OB & Sviluppo dell'applicazione \textit{web}\\
 		\hline
-		5-OB & Sviluppo del report per tracciamento caratteristiche offerta\\
+		5-OB & Sviluppo del \textit{report} per tracciamento caratteristiche offerta\\
 		\hline
 		6-OB & Validazione del prodotto\\
 		\hline
-		7-DE & Sviluppo del report per statistiche miglioramento \textit{BI}\\
+		7-DE & Sviluppo del \textit{report} per statistiche miglioramento \textit{BI}\\
 		\hline
 	\end{longtable}
 \end{center}
@@ -151,23 +151,69 @@ In accordo con il relatore e il tutor aziendale, lo stage è stato svolto preval
 Per poter informare il mio relatore  dei progressi, ogni 5 giorni lavorativi dovevo provvedere a inviare un resoconto dello stato di avanzamento rispetto alle attese del piano di lavoro e ad eventuali deviazioni da esso.\\Invece, con il tutor aziendale, ho previsto almeno un incontro a settimana in remoto o fisicamente in azienda per discutere del progresso e di eventuali cambiamenti da apportare al progetto.
 \subsubsection{Vincoli tecnologici}
 Lo sviluppo del progetto prevedeva alcuni vincoli imposti dall'azienda.
-In primo luogo l'utilizzo della tecnologia \textit{SOAP}, \textit{Simple Object Access Protocol}, per i \textit{web services} che permettevano l'interfacciamento tra l'applicazione \textit{web} e il gestionale.
-In secondo luogo, l'utilizzo dello strumento per la produzione di stampe di dati \textit{Crystal Reports} per produrre il report di dettaglio della richiesta d'offerta e il report con le statistiche utili all'analisi della \textit{business intelligence}.
+In primo luogo l'utilizzo della tecnologia \textit{SOAP}, \textit{Simple Object Access Protocol}, per i \textit{web service} che permettevano l'interfacciamento tra l'applicazione \textit{web} e il gestionale.
+In secondo luogo, l'utilizzo dello strumento per la produzione di stampe di dati \textit{Crystal Reports} per produrre il \textit{report} di dettaglio della richiesta d'offerta e il \textit{report} con le statistiche utili all'analisi della \textit{BI}.
+
+
+\subsection{Pianificazione}
+
+Il Piano di Lavoro, redatto insieme al tutor aziendale, prevedeva inizialmente 4 fasi, ognuna delle quali della durata di 3 settimane lavorative:
+\begin{itemize}
+	\item studio del processo aziendale e formazione sulle tecnologie coinvolte nello sviluppo dell'applicazione \textit{web} e dell'interfacciamento con il gestionale;
+	\item progettazione della soluzione e configurazione dell'ambiente di sviluppo;
+	\item realizzazione dell'applicazione \textit{web} e fase di \textit{testing};
+	\item formazione sul \textit{software} per la produzione di stampe e sviluppo dei \textit{report};
+\end{itemize}
+L'ultima settimana di stage prevedeva la verifica e validazione finale.
+Di seguito un dettaglio delle fasi appena descritte:
+
+\begin{center}
+	\begin{longtable}{|c|c|}
+		\caption{Dettaglio pianificazione del progetto di stage.}\\		
+		\hline
+		\textbf{Ore} & \textbf{Attività}\\
+		\hline
+		40 & Formazione sulle tecnologie\\
+		\hline
+		35 & Analisi del problema\\
+		\hline
+		25 & Stesura documentazione relativa ad analisi e progettazione\\
+		\hline
+		55 & Progettazione della soluzione\\
+		\hline
+		15 & Configurazione dell'ambiente di sviluppo\\
+		\hline
+		60 & Sviluppo dell'applicazione \textit{web}\\
+		\hline
+		20 & \textit{Test} sull'applicazione \textit{web}\\
+		\hline
+		25 & \textit{Test} sui \textit{web service}\\
+		\hline
+		25 & Formazione su strumento e produzione \textit{report}\\
+		\hline
+		5 & Stesura documentazione finale\\
+		\hline
+		15 & Verifica e validazione finale\\
+		\hline
+	\end{longtable}
+\end{center}
+
+
 %**************************************************************
 \section{Analisi preventiva dei rischi}
 Nella fase iniziale di analisi ho individuato alcuni possibili rischi in cui poter incorrere.\\
 Successivamente, ho provveduto ad elaborare delle possibili soluzioni per far loro fronte.
 \\
 \begin{risk}{Tecnologie e \textit{framework} sconosciuti}
-	\riskdescription{Durante lo svolgimento dello stage è previsto l'utilizzo di tecnologie non ancora esplorate dallo studente}
+	\riskdescription{Durante lo svolgimento dello stage è previsto l'utilizzo di tecnologie a me ancora sconosciute}
 	\risksolution{Nella fase di pianificazione iniziale ho programmato un periodo di auto-formazione sulle tecnologie e sui \textit{framework} da utilizzare}	
 \end{risk}
 \begin{risk}{Incomprensioni sul processo aziendale}
-	\riskdescription{A causa dei vari enti coinvolti nella fase di analisi e del gran numero di attività svolte attualmente extra sistema (utilizzo di moduli cartacei, contatti telefonici direttamente coi fornitori, ecc.), è possibile non venga ben delineato e compreso il processo aziendale interessato}
+	\riskdescription{A causa dei vari enti coinvolti nella fase di analisi e del gran numero di attività svolte attualmente extra sistema (utilizzo di moduli cartacei, contatti telefonici direttamente coi fornitori, ecc.), è possibile non riesca a delineare e comprendere pienamente il processo aziendale interessato}
 	\risksolution{In accordo con il \textit{tutor} aziendale, sono stati individuati dei \textit{key users}, uno per ogni ufficio coinvolto, che si rendono disponibili ad offrire maggior dettaglio sulle fasi che interessano la loro attività}	
 \end{risk}
 \begin{risk}{Scelte non ottimali}
-	\riskdescription{A causa dell'inesperienza dello studente è possibile non vengano comprese le attività da svolgere o vengano fatte scelte non adeguate alle aspettative.}
+	\riskdescription{A causa dell'inesperienza è possibile che io non comprenda le attività da svolgere o faccia scelte non adeguate alle aspettative.}
 	\risksolution{Tutte le scelte progettuali fondamentali saranno discusse e supervisionate dal \textit{tutor} aziendale}	
 \end{risk}
 
@@ -178,7 +224,7 @@ Successivamente, ho provveduto ad elaborare delle possibili soluzioni per far lo
 
 Una delle principali aspettative che mi hanno portato a scegliere questa proposta di stage curriculare, era il contesto di inserimento: volevo capire come una grande azienda, il cui settore di impiego non è strettamente legato a quello informatico, si approccia alle nuove tecnologie e si appoggia all'informatica per il suo business. 
 \\
-Riuscire ad avere una visione d'insieme per capire quali attività vengono svolte per supportare un'azienda, non solo del contesto dello sviluppo software ma anche nell'ausilio di altri processi.
+Riuscire ad avere una visione d'insieme per capire quali attività vengono svolte per supportare un'azienda, non solo del contesto dello sviluppo \textit{software} ma anche nell'ausilio di altri processi.
 \\
 Inoltre, l'opportunità offertami dall'azienda non si sarebbe fermata al semplice stage curricolare o viceversa all'assunzione per la sola occupazione lavorativa, ma quella che mi è stata proposta era contemporaneamente la possibilità di supporto nel mio percorso di studi fornendomi un impiego retribuito, a riprova di una \textit{vision} contemporanea che vede negli stagisti non uno svantaggio, ma una risorsa che porta nuova linfa all'interno di un mondo lavorativo consolidato.
 \\
@@ -186,7 +232,7 @@ A conclusione dello stage mi attirava la possibilità di continuare a seguire le
 
 \subsection{Motivazioni professionali}
 
-La mia scelta di stage è ricaduta su questa azienda perché rispetto alle altre con cui ho avuto contatti grazie all'evento di incontro \textit{StageIt} in cui le principali aziende del territorio propongono i loro \textit{stage} formativi in ambito \textit{ICT}, questa mi avrebbe offerto l'opportunità di vedere non solo da vicino il processo di sviluppo di un nuovo gestionale, ma di svilupparlo a diretto contatto con gli utenti finali e non solo come un servizio offerto dall'esterno (ad esempio un'azienda di sola consulenza informatica ), esperienza molto più stimolante per chi alle prime armi si avvicina al mondo del lavoro.
+La mia scelta di stage è ricaduta su questa azienda perché rispetto alle altre con cui ho avuto contatti grazie all'evento di incontro \textit{StageIt} in cui le principali aziende del territorio propongono i loro \textit{stage} formativi in ambito \textit{\gls{ict}\glsfirstoccur}, questa mi avrebbe offerto l'opportunità di vedere non solo da vicino il processo di sviluppo di un nuovo gestionale, ma di svilupparlo a diretto contatto con gli utenti finali e non solo come un servizio offerto dall'esterno (ad esempio un'azienda di sola consulenza informatica), esperienza molto più stimolante per chi alle prime armi si avvicina al mondo del lavoro.
 \\
 Mi interessava dunque il fatto di potermi rapportare direttamente con gli utenti finali del prodotto, in modo da poter comprendere meglio le problematiche che si possono incontrare in fase di analisi e riuscire ad applicare i concetti studiati nel corso di Ingegneria del Software. 
 \\ 
