@@ -23,7 +23,7 @@
 \section{L'azienda San Marco Group}
 
 San Marco Group è un gruppo aziendale \textit{leader} in Italia nella produzione di pitture e vernici per l'edilizia professionale. Il gruppo con sede principale a Marcon (VE) conta 300 dipendenti, è proprietario di 7 diversi \textit{brand}, ha un fatturato pari a 80 milioni di euro ed una rete distributiva che tocca oltre 100 Paesi. Tutti i prodotti vengono progettati negli stabilimenti italiani, mentre la produzione si divide tra Italia, Bosnia e Russia, con un totale di 8 stabilimenti produttivi che producono per tutti i \textit{brand} del gruppo. \\
-Nella sede di Marcon, che ospita 150 dipendenti, tra impiegati e operai, vi si trovano anche gli uffici delle funzioni centrali del gruppo, le unità produttive e i magazzini.\\
+Nella sede di Marcon (di cui vediamo una panoramica in figura \ref{fig:sede-marcon}), che ospita 150 dipendenti, tra impiegati e operai, vi si trovano anche gli uffici delle funzioni centrali del gruppo, le unità produttive e i magazzini.\\
 I prodotti San Marco vengono distribuiti attraverso un \textit{network} di rivenditori specializzati in Italia e all'estero, e in esclusiva per il mercato italiano attraverso il primo \textit{marketplace} di proprietà dedicato alle pitture.
 
 \vspace{10pt}
@@ -31,6 +31,7 @@ I prodotti San Marco vengono distribuiti attraverso un \textit{network} di riven
 	\begin{center}
 		\includegraphics[height=4.2cm]{sede-marcon}
 		\caption{Sede principale di Marcon (VE). \newline \textbf{Fonte: }\url{https://sanmarcogroup.com/}}
+		\label{fig:sede-marcon}
 	\end{center}
 \end{figure}
 \vspace{10pt}
@@ -77,8 +78,8 @@ La gestione delle problematiche relative al \textit{software} gestionale azienda
 
 \subsubsection{Strumenti di supporto}
 
-Per gestire al meglio le richieste di assistenza interna, viene utilizzato un servizio di \textit{ticketing} chiamato \textit{Web Help Desk} (figura \ref{fig:web-help-desk}), che attraverso un portale \textit{web} permette la creazione di richieste da parte degli utenti e una facile gestione delle stesse dai tecnici. \\
-Lo strumento è strutturato in modo da categorizzare le richieste, dare loro un livello di priorità e sulla base di quest'ultimo, assegnarle ad un tecnico che le prenderà a suo carico.\\
+Per gestire al meglio le richieste di assistenza interna, viene utilizzato un servizio di \textit{ticketing} chiamato \textit{Web Help Desk}, che attraverso un portale \textit{web} permette la creazione di richieste da parte degli utenti e una facile gestione delle stesse dai tecnici. \\
+Lo strumento è strutturato in modo da categorizzare le richieste, dare loro un livello di priorità e sulla base di quest'ultimo, assegnarle ad un tecnico che le prenderà a suo carico.\\ L'immagine che troviamo in figura \ref{fig:web-help-desk} mostra l'interfaccia web dello strumento.\\
 Oltre a fornire supporto nel controllo delle richieste, questo strumento offre funzionalità avanzate come:
 \begin{itemize}
 	\item la gestione degli \textit{assets};
@@ -90,7 +91,7 @@ Oltre a fornire supporto nel controllo delle richieste, questo strumento offre f
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[height=6cm]{web-help-desk}
-		\caption{Web Help Desk - piattaforma di \textit{ticketing} utilizzata.\newline
+		\caption{\textit{Web Help Desk} - piattaforma di \textit{ticketing} utilizzata.\newline
 		\textbf{Fonte: }\url{https://www.webhelpdesk.com/}}
 	\label{fig:web-help-desk}
 	\end{center}
@@ -139,7 +140,7 @@ Per quanto riguarda le richieste di programmazione generica come lo sviluppo di 
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[height=5.9cm]{workloads-vs}
-		\caption{Esempi di \textit{workloads} supportati da Visual Studio 2019. \newline
+		\caption{Esempi di \textit{workloads} supportati da \textit{Visual Studio 2019}. \newline
 		\textbf{Fonte: } \url{https://visualstudio.microsoft.com}}
 	\label{fig:workload-vs}
 	\end{center}
@@ -163,7 +164,8 @@ Tutti gli aspetti di natura sistemistica sono gestiti internamente, con il suppo
 \end{itemize}
 
 \subsubsection{Strumenti di supporto}
-Per quanto riguarda la gestione dei \textit{server} virtuali, si fa affidamento a \textit{VMware vSphere}, una piattaforma di \textit{cloud computing} per la virtualizzazione.\\ Questa piattaforma permette di creare più sistemi di computer virtuali, chiamati macchine virtuali (\textit{VM}), le quali vengono eseguite su uno stesso \textit{server} fisico, chiamato \textit{host}.\\ Attraverso una pagina \textit{web} è possibile collegarsi al \textit{client web} \textit{vSphere Web Client} e gestire le \textit{VM} tramite le funzionalità messe a disposizione dall'interfaccia.
+Per quanto riguarda la gestione dei \textit{server} virtuali, si fa affidamento a \textit{VMware vSphere}, una piattaforma di \textit{\gls{cloudcomputing}\glsfirstoccur} per la virtualizzazione.\\ Questa piattaforma permette di creare più sistemi di computer virtuali, chiamati macchine virtuali (\textit{VM}), le quali vengono eseguite su uno stesso \textit{server} fisico, chiamato \textit{host}.\\ Attraverso una pagina \textit{web} è possibile collegarsi al \textit{client web} \textit{vSphere Web Client} e gestire le \textit{VM} tramite le funzionalità messe a disposizione dall'interfaccia.\\
+In figura \ref{fig:virtualizzazione} vediamo come il \textit{vCenter Server}, tramite i \textit{client} \textit{vSphere}, permetta di gestire le macchine virtuali che sono state virtualizzate a partire dagli \textit{host}.
 
 \vspace{20pt}
 
@@ -171,18 +173,21 @@ Per quanto riguarda la gestione dei \textit{server} virtuali, si fa affidamento 
 	\begin{center}
 		\includegraphics[height=6cm]{vsphere-2}
 		\caption{Sintesi del servizio di virtualizzazione offerto da \textit{VMware vSphere}. \newline \textbf{Fonte: } \url{https://docs.vmware.com}}
+		\label{fig:virtualizzazione}
 	\end{center}
 \end{figure}
 
 \vspace{15pt}
 
-\textit{Fortinet} è il \textit{firewall} adottato dall'azienda. La sua gestione avviene attraverso l'interfaccia \textit{web} di amministrazione, che permette di gestire gli utenti abilitati all'accesso alla rete aziendale tramite \textit{\gls{vpng}\glsfirstoccur}, le \textit{policy} che regolano il protocollo \textit{IPv4}, il monitoraggio dell'attività di rete e gli apparati collegati (\textit{switch} e \textit{access point}).
+\textit{Fortinet} è il \textit{firewall} adottato dall'azienda. La sua gestione avviene attraverso l'interfaccia \textit{web} di amministrazione, che permette di gestire gli utenti abilitati all'accesso alla rete aziendale tramite \textit{\gls{vpn}\glsfirstoccur}, le \textit{policy} che regolano il protocollo \textit{IPv4}, il monitoraggio dell'attività di rete e gli apparati collegati (\textit{switch} e \textit{access point}).\\
+In figura \ref{fig:fortigate} vediamo una delle implementazioni possibili di un sistema \textit{Fortigate}, che in questo caso si frappone tra la \textit{LAN} interna e la rete internet esterna controllando il traffico in entrata e uscita, e gestendo la rete in modalità \textit{\gls{nat}\glsfirstoccur}.
 
 \vspace{10pt}
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[height=4.5cm]{fortigate}
 		\caption{Diagramma dell'implementazione di un sistema \textit{Fortigate} in modalità \textit{NAT}. \newline \textbf{Fonte: } \url{https://docs.fortinet.com}}
+		\label{fig:fortigate}
 	\end{center}
 \end{figure}
 \vspace{10pt}

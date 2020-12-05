@@ -58,13 +58,14 @@ Alla fine della valutazione la scelta è ricaduta su \textit{Sage X3}, per la su
 	\item formazione degli utenti finali.
 \end{itemize}
 
-Di seguito vediamo un'immagine riassuntiva sulle tecnologie che compongono il software gestionale e un'accenno alla sua architettura di sistema, descritta più in dettaglio in \ref{cap:architettura-sage}.
+In figura \ref{fig:arch-sage} vediamo le tecnologie che compongono il software gestionale e un'accenno alla sua architettura di sistema, descritta più in dettaglio nella sezione \ref{cap:architettura-sage}.
 
 \vspace{10pt}
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[height=7cm]{sage-x3}
 		\caption{Architettura di sistema di \textit{Sage X3}. \newline \textbf{Fonte:}\url{https://partnerportal.sagex3.com/}}
+		\label{fig:arch-sage}
 	\end{center}
 \end{figure}
 \vspace{30pt}
@@ -114,11 +115,12 @@ La tipologia determina l'importanza di realizzare tale obiettivo, ed è scelta t
 	\item \textbf{DE}, indica un obiettivo desiderabile, il cui raggiungimento è importante e dal riconoscibile valore aggiunto, ma non necessario.
 \end{itemize}
 
-\newpage
+In tabella \ref{table:obiettivi} possiamo vedere in dettaglio gli obiettivi dello \textit{stage}.
 
 \begin{center}
 	\begin{longtable}{|c|c|}
-		\caption{Tabella riassuntiva degli gli obiettivi dello \textit{stage}.}\\
+		\caption{Tabella riassuntiva degli obiettivi dello \textit{stage}.}
+		\label{table:obiettivi}\\
 		\hline
 		\textbf{Obiettivo} & \textbf{Descrizione}\\
 		\hline
@@ -160,46 +162,47 @@ Lo sviluppo del progetto prevedeva alcuni vincoli imposti dall'azienda.
 In primo luogo l'utilizzo della tecnologia \textit{SOAP}, \textit{Simple Object Access Protocol}, per i \textit{web service} che permettevano l'interfacciamento tra l'applicazione \textit{web} e il gestionale.
 In secondo luogo, l'utilizzo dello strumento per la produzione di stampe di dati \textit{Crystal Reports} per produrre il \textit{report} di dettaglio della richiesta d'offerta e il \textit{report} con le statistiche utili all'analisi della \textit{BI}.
 
-
+\newpage
 \subsection{Pianificazione}
 
-Il Piano di Lavoro, redatto insieme al \textit{tutor} aziendale, prevedeva inizialmente 4 fasi, ognuna delle quali della durata di 3 settimane lavorative:
+Il Piano di Lavoro, redatto insieme al \textit{tutor} aziendale, prevedeva inizialmente 5 fasi:
 \begin{itemize}
-	\item studio del processo aziendale e formazione sulle tecnologie coinvolte nello sviluppo dell'applicazione \textit{web} e dell'interfacciamento con il gestionale;
-	\item progettazione della soluzione e configurazione dell'ambiente di sviluppo;
-	\item realizzazione dell'applicazione \textit{web} e fase di \textit{testing};
-	\item formazione sul \textit{software} per la produzione di stampe e sviluppo dei \textit{report};
+	\item \textbf{fase 1}, studio del processo aziendale e formazione sulle tecnologie coinvolte nello sviluppo dell'applicazione \textit{web} e dell'interfacciamento con il gestionale;
+	\item \textbf{fase 2}, progettazione della soluzione e configurazione dell'ambiente di sviluppo;
+	\item \textbf{fase 3}, realizzazione dell'applicazione \textit{web} e fase di \textit{testing};
+	\item \textbf{fase 4}, formazione sul \textit{software} per la produzione di stampe e sviluppo dei \textit{report};
+	\item \textbf{fase 5}, verifica e la validazione finale del prodotto.
 \end{itemize}
-L'ultima settimana di \textit{stage} prevedeva la verifica e la validazione finale.
-Di seguito un dettaglio delle fasi appena descritte:
+Nella tabella \ref{table:dettaglio-piano} vediamo un dettaglio delle attività che hanno caratterizzato le fasi appena descritte:
 
 \begin{center}
-	\begin{longtable}{|c|c|}
-		\caption{Dettaglio pianificazione del progetto di \textit{stage}.}\\		
+	\begin{longtable}{|c|c|c|}
+		\caption{Dettaglio pianificazione del progetto di \textit{stage}.}
+		\label{table:dettaglio-piano}\\	
 		\hline
-		\textbf{Ore} & \textbf{Attività}\\
+		\textbf{Fase} & \textbf{Ore} & \textbf{Attività}\\
 		\hline
-		40 & Formazione sulle tecnologie\\
+		1 & 40 & Formazione sulle tecnologie\\
 		\hline
-		35 & Analisi del problema\\
+		1 & 35 & Analisi del problema\\
 		\hline
-		25 & Stesura documentazione relativa ad analisi e progettazione\\
+		1 & 25 & Stesura documentazione relativa ad analisi e progettazione\\
 		\hline
-		55 & Progettazione della soluzione\\
+		2 & 55 & Progettazione della soluzione\\
 		\hline
-		15 & Configurazione dell'ambiente di sviluppo\\
+		2 & 15 & Configurazione dell'ambiente di sviluppo\\
 		\hline
-		60 & Sviluppo dell'applicazione \textit{web}\\
+		3 & 60 & Sviluppo dell'applicazione \textit{web}\\
 		\hline
-		20 & \textit{Test} sull'applicazione \textit{web}\\
+		3 & 20 & \textit{Test} sull'applicazione \textit{web}\\
 		\hline
-		25 & \textit{Test} sui \textit{web service}\\
+		3 & 25 & \textit{Test} sui \textit{web service}\\
 		\hline
-		25 & Formazione su strumento e produzione \textit{report}\\
+		4 & 25 & Formazione su strumento e produzione \textit{report}\\
 		\hline
-		5 & Stesura documentazione finale\\
+		5 & 5 & Stesura documentazione finale\\
 		\hline
-		15 & Verifica e validazione finale\\
+		5 & 15 & Verifica e validazione finale\\
 		\hline
 	\end{longtable}
 \end{center}

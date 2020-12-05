@@ -86,33 +86,35 @@ Questa modifica ha richiesto un aggiornamento delle attività e della pianificaz
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[height=5cm]{gantt}
-		\caption{Rappresentazione della pianificazione con diagramma di Gantt.}
+		\caption{Rappresentazione della pianificazione con diagramma di \textit{Gantt}.}
+		\label{fig:gantt}
 	\end{center}
 \end{figure}
 
 \newpage
 
-Come si evince dal dettaglio nella tabella \ref{table:requisiti-aggiornati}, sono aumentate sensibilmente le ore dedicate alla formazione, necessarie ad apprendere le nozioni fondamentali per sviluppare l'interfaccia nel gestionale. Sono diminuite le ore necessarie allo sviluppo dell'applicazione \textit{web}, in quanto la gestione delle richieste da parte degli utenti aziendali viene fatta all'interno di \textit{Sage X3} e sono state aggiunte le ore necessarie all'implementazione e ai \textit{test} dell'interfaccia del gestionale.
+Come si evince dal dettaglio nella tabella \ref{table:requisiti-aggiornati} e in figura \ref{fig:gantt}, sono aumentate sensibilmente le ore dedicate alla formazione, necessarie ad apprendere le nozioni fondamentali per sviluppare l'interfaccia nel gestionale. Sono diminuite le ore necessarie allo sviluppo dell'applicazione \textit{web}, in quanto la gestione delle richieste da parte degli utenti aziendali viene fatta all'interno di \textit{Sage X3} e sono state aggiunte le ore necessarie all'implementazione e ai \textit{test} dell'interfaccia del gestionale.
 
 
 \subsection{Requisiti}
-I requisiti che ho individuato sono stati classificati, assieme al \textit{tutor} aziendale, per tipologia:
+Ho individuato e classificato, con l'aiuto del \textit{tutor aziendale}, i requisiti per tipologia:
 \begin{itemize}
 	\item \textbf{funzionali}, che individuano tutte le funzionalità previste dall'applicazione \textit{web} e dall'interfaccia in \textit{Sage X3};
 	\item \textbf{qualitativi}, in cui ho inserito l'utilizzo del sistema di versionamento con \textit{Github};
 	\item \textbf{di vincolo}, in cui rientrano i vincoli sulle tecnologie da utilizzare nello sviluppo del progetto, ossia \textit{framework} e \textit{web service}; 
-	\item \textbf{prestazionali}, non è risultato necessario definire alcun vincolo necessario a garantire alcuna prestazione.
+	\item \textbf{prestazionali}, non è risultato necessario definire alcun vincolo utile a garantire alcuna prestazione.
 \end{itemize}
-Oltre alla tipologia, i requisiti vengono suddivisi anche per importanza:
+Inoltre, ho suddiviso i requisiti anche per importanza:
 \begin{itemize}
 	\item \textbf{obbligatori}, necessari alla realizzazione del progetto;
-	\item \textbf{desiderabili}, non necessari ma se soddisfatti portano valore aggiunto al prodotto.
+	\item \textbf{desiderabili}, non necessari ma se soddisfatti apportano valore aggiunto al prodotto.
 \end{itemize}
-
+In tabella \ref{table:requisiti} vediamo un riepilogo dei requisiti individuati.
 
 \begin{center}
 \begin{longtable}{ | c| c | c | c|}
-	\caption{Tabella di riepilogo requisiti.}\\
+	\caption{Tabella di riepilogo requisiti.}
+	\label{table:requisiti}\\
 	\hline
 	\textbf{Tipo} & \textbf{Obbligatorio} & \textbf{Desiderabile} & \textbf{Totale}\\
 	\hline
@@ -129,7 +131,7 @@ Oltre alla tipologia, i requisiti vengono suddivisi anche per importanza:
 \end{longtable}
 \end{center}
 
-Ritengo che la quantità di requisiti individuati sia stata congrua con il tempo che ho impiegato per soddisfarli, anche se per i requisiti che riguardavano i \textit{web service} ho impiegato più tempo del previsto, sia per la tecnologia su cui mi dovevo formare, sia per problematiche esterne.\\
+Ritengo che la quantità di requisiti da me individuati sia stata congrua con il tempo che ho impiegato per soddisfarli, anche se per i requisiti che riguardavano i \textit{web service} ho impiegato più tempo del previsto, dato dal fatto di dovermi formare sulla tecnologia sconosciuta, sia a causa di problematiche esterne.\\
 Grazie all'esperienza maturata nel progetto svolto durante il corso di Ingegneria del Software, ho appreso che la maggior parte dei requisiti non è individuabile facilmente e non è sufficiente basarsi sul capitolato presentato dall'azienda.\\
 Per questo motivo ho cercato di approfondire il più possibile la fase di analisi, soprattutto attraverso colloqui con tutti gli utenti interessati, in modo da comprendere a fondo le necessità dell'azienda e le caratteristiche che doveva avere la mia soluzione.
 
@@ -141,16 +143,16 @@ Per questo motivo ho cercato di approfondire il più possibile la fase di analis
 \subsection{Tecnologie e strumenti utilizzati}
 
 \subsubsection{Visual Studio}
-\textit{Visual Studio} nella sua versione 2019 è l'\textit{IDE} che ho utilizzato come ambiente di sviluppo per la creazione dell'applicazione \textit{web}. L'\textit{IDE} incorpora la versione 4.7.2 di \textit{.NET Framework}, ambiente di esecuzione \textit{runtime} della piattaforma tecnologica \textit{.NET}.\\
+\textit{Visual Studio} nella sua versione 2019 è l'\textit{\gls{ideg}\glsfirstoccur} che ho utilizzato come ambiente di sviluppo per la creazione dell'applicazione \textit{web}. L'\textit{IDE} incorpora la versione 4.7.2 di \textit{.NET Framework}, ambiente di esecuzione \textit{runtime} della piattaforma tecnologica \textit{.NET}.\\
 Ho scelto questo strumento in primo luogo perché è l'ambiente utilizzato maggiormente all'interno dell'azienda, per la sua compatibilità ed estendibilità con i vari applicativi e servizi \textit{Microsoft} presenti nell'infrastruttura interna. Inoltre dispone di un \textit{debugger} interno che ho utilizzato per verificare e testare i vari metodi realizzati.
 
 \subsubsection{JQuery}
-\textit{jQuery} è una libreria \textit{JavaScript} per applicazioni \textit{web}, distribuita come software libero, distribuito sotto i termini della licenza MIT.
-Ho utilizzato la libreria principalmente per la validazione dei campi all'interno del \textit{form} dell'applicazione \textit{web}, sfruttando il \textit{plugin} \textit{jQueri Validation}.\\
+\textit{jQuery} è una libreria \textit{JavaScript} per applicazioni \textit{web}, distribuita come software libero, distribuito sotto i termini della licenza \textit{MIT}.
+Ho utilizzato la libreria principalmente per la validazione dei campi all'interno del \textit{form} dell'applicazione \textit{web}, sfruttando il \textit{plugin} \textit{jQuery Validation}.\\
 In questo modo, ho potuto effettuare una validazione lato \textit{client} dei tipi di dato inseriti dagli utenti, verificandone la coerenza.
 
 \subsubsection{Bootstrap}
-\textit{Bootstrap} è un \textit{framework} \textit{front-end} gratuito e \textit{open source} per la progettazione di siti e applicazioni \textit{web}. Contiene modelli di progettazione basati su HTML e CSS per moduli, pulsanti, navigazione e altri componenti dell'interfaccia, nonché estensioni \textit{JavaScript} facoltative.\\
+\textit{Bootstrap} è un \textit{framework} \textit{front-end} gratuito e \textit{open source} per la progettazione di siti e applicazioni \textit{web}. Contiene modelli di progettazione basati su \textit{HTML} e \textit{CSS} per moduli, pulsanti, navigazione e altri componenti dell'interfaccia, nonché estensioni \textit{JavaScript} facoltative.\\
 Per realizzare l'interfaccia dell'applicazione \textit{web} ho sfruttato il tema gratuito e \textit{open source} \textit{SB admin 2}, messo a disposizione dal \textit{framework}.
 
 \subsubsection{SQL Server}
@@ -158,21 +160,23 @@ Per realizzare l'interfaccia dell'applicazione \textit{web} ho sfruttato il tema
 Per interagire e manipolare i dati in \textit{SQL Server}, ho utilizzato \textit{SQL Server Management Studio}, un programma sviluppato appositamente da \textit{Microsoft} il cui utilizzo è già adottato e consolidato in azienda.
 
 \subsubsection{Git}
-Il sistema di \textit{versioning} adottato per questo progetto e in generale utilizzato dall'azienda è Git.\\
-L'azienda adotta attualmente GitHub, un servizio di hosting per progetti basato su Git.
-Ho utilizzato GitKraken, un client \textit{GUI} (\textit{Graphic User Interface}) per rendere più facile e veloce l'utilizzo del sistema di versionamento.
+Il sistema di versionamento adottato per questo progetto e in generale utilizzato dall'azienda è \textit{Git}.\\
+L'azienda adotta attualmente \textit{GitHub}, un servizio di \textit{hosting} per progetti basato su \textit{Git}.\\
+Ho utilizzato \textit{GitKraken}, un \textit{client} \textit{\gls{gui}} per rendere più facile e veloce l'utilizzo del sistema di versionamento.\\
+In figura \ref{fig:gitkraken} un esempio dell'interfaccia dello strumento.
 
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[height=6cm]{gitkraken}
-		\caption{Immagine di cattura di schermo che mostra il repository del progetto su Gitkraken.}
+		\caption{Immagine di cattura di schermo che mostra il \textit{repository} del progetto su \textit{Gitkraken}.}
+		\label{fig:gitkraken}
 	\end{center}
 \end{figure}
 
 \vspace{10pt}
 
 \subsubsection{Tecnologia SOAP}
-\textit{SOAP} (\textit{simple object access protocol}) è un protocollo che regola lo scambio di messaggi tra componenti \textit{software}. Opera principalmente sul protocollo di rete \textit{HTTP}, si basa sul metalinguaggio \textit{XML} e ha una struttura costituita da:
+\textit{SOAP} (\textit{simple object access protocol}) è un protocollo che regola lo scambio di messaggi tra componenti \textit{software}. Opera principalmente sul protocollo di rete \textit{HTTP}, si basa sul metalinguaggio \textit{\gls{xmlg}\glsfirstoccur} e ha una struttura costituita da:
 \begin{itemize}
 	\item \textit{\textbf{header}}, che contiene le informazioni necessarie per l'instradamento e la sicurezza; 
 	\item \textit{\textbf{body}}, che contiene i dati formattati secondo l'\textit{XML Schema}.
@@ -225,12 +229,13 @@ Nel mio caso ho agito in questo modo:
 	\item ho utilizzato la transazione standard (\textit{STD}) per personalizzare la videata di inserimento della richiesta di beni materiali;
 	\item ho creato una nuova transazione (\textit{ALL}) e l'ho utilizzata per personalizzare la videata di inserimento della richiesta di trasporto.
 \end{itemize}
-In questo modo, ogni volta che si accede alla funzionalità delle richieste di offerta, compare la scelta delle transazioni e permette di gestire l'uno o l'altro tipo di richiesta, a seconda della necessità.
+In questo modo, ogni volta che si accede alla funzionalità delle richieste di offerta, compare la scelta delle transazioni (vedi figura \ref{fig:transazione}) e permette di gestire l'uno o l'altro tipo di richiesta, a seconda della necessità.
 
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[height=1.8cm]{transazione-x3}
 		\caption{Immagine di cattura di schermo che mostra la scelta della transazione all'apertura delle richieste di offerta.}
+		\label{fig:transazione}
 	\end{center}
 \end{figure}
 
@@ -252,7 +257,7 @@ L'impostazione data all'interfaccia è stata resa il più possibile simile al mo
 \end{figure}
 
 \subsubsection{Funzionamento}
-Alla creazione di una richiesta di offerta, sia essa di acquisto beni materiali o di trasporto, all'interno di una delle tabelle del database che definisce l'oggetto \textit{X3} viene creato automaticamente un id chiamato \textit{AUUID} che associa univocamente ogni fornitore coinvolto con la relativa richiesta di offerta.
+Alla creazione di una richiesta di offerta, sia essa di acquisto beni materiali o di trasporto, all'interno di una delle tabelle del database che definisce l'oggetto \textit{X3} viene creato automaticamente un id chiamato \textit{AUUID} che associa univocamente ogni fornitore coinvolto con la relativa richiesta di offerta.\\
 Una volta compilata nei relativi campi dagli utenti coinvolti, attraverso la funzionalità presente in \textit{Sage X3} di invio \textit{e-mail}, viene spedita una \textit{e-mail} ad ogni fornitore contenente il corrispondente \textit{AUUID}, che utilizzeranno come \textit{token} al momento dell'autenticazione nell'applicazione \textit{web}.
 
 %**************************************************************
@@ -277,15 +282,14 @@ Lo stesso \textit{web service} può essere definito su più \textit{dossier}.
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[height=6cm]{architettura-x3}
-		\caption{Rappresentazione grafica dell'architettura di una installazione di \textit{Sage X3}.\newline \textbf{Fonte:} Documentazione Online Help Center di \textit{Sage X3}}
+		\caption{Rappresentazione grafica dell'architettura di una installazione di \textit{Sage X3}.\newline \textbf{Fonte:} Documentazione \textit{Online Help Center} di \textit{Sage X3}}
 		\label{fig:architettura-x3}
 	\end{center}
 \end{figure}
 
 
 All'interno di \textit{Sage X3} è presente una \textit{utility} che permette la pubblicazione di un \textit{web service}: una semplice funzione che trasforma un sottoprogramma o un oggetto \textit{X3} in un \textit{web service} con un nome pubblico.
-Nel mio caso, ho utilizzato questa \textit{utility} per pubblicare due \textit{web service}, che fornissero i metodi di lettura, modifica e scrittura dell'oggetto \\
- corrispondente alla richiesta di offerta, rispettivamente:
+Nel mio caso, ho utilizzato questa \textit{utility} per pubblicare due \textit{web service} (vedi figura \ref{fig:ws-creati}), che fornissero i metodi di lettura, modifica e scrittura dell'oggetto corrispondente alla richiesta di offerta, rispettivamente:
 \begin{itemize}
 	\item 1 \textit{web service}, chiamato \textit{WSYPQHSTD}, che offre i metodi per la richiesta di offerta di beni materiali (generata dalla transazione \textit{STD}); 
 	\item 1 \textit{web service}, chiamato \textit{WSYPQHALL}, che offre i metodi per la richiesta di offerta di trasporto (generata dalla transazione \textit{ALL}).
@@ -296,6 +300,7 @@ Nel mio caso, ho utilizzato questa \textit{utility} per pubblicare due \textit{w
 	\begin{center}
 		\includegraphics[height=6cm]{creazione-ws-x3}
 		\caption{Immagine di cattura di schermo che mostra i \textit{web service} creati.}
+		\label{fig:ws-creati}
 	\end{center}
 \end{figure}
 
@@ -333,7 +338,7 @@ Grazie al \textit{tool} messo a disposizione da Visual Studio, ho potuto aggiung
 A questo punto, con i metodi eredidati dal \textit{WSDL}, è possibile implementare una funzione di autenticazione, che andrà successivamente aggiunta all'interno dell'\textit{header} della richieste \textit{SOAP}.
 
 
-%\subsubsection{Utilizzo di JQuery}
+
 \newpage
 \subsubsection{Funzionamento}
 Il fornitore si collega all'applicazione \textit{web}, dove inserisce nella schermata di autenticazione (figura \ref{fig:auth-x3}) il \textit{token} ricevuto via \textit{e-mail}.
@@ -437,11 +442,12 @@ Essendo ancora in corso lo sviluppo del nuovo gestionale e di tutte le funzional
 
 \subsection{Copertura di requisiti e test}
 
-Tutti i requisiti delineati durante la fase di analisi sia relativi all'applicazione \textit{web} che all'interfaccia del gestionale, sono stati soddisfatti.
+Tutti i requisiti delineati durante la fase di analisi sia relativi all'applicazione \textit{web} che all'interfaccia del gestionale, sono stati soddisfatti. In tabella \ref{table:requisiti-soddisfatti} un riepilogo dei requisiti soddisfatti.
 
 \begin{center}
 	\begin{longtable}{ | c| c | c|}
-		\caption{Tabella di riepilogo requisiti soddisfatti.}\\		
+		\caption{Tabella di riepilogo requisiti soddisfatti.}
+		\label{table:requisiti-soddisfatti}\\		
 		\hline
 		\textbf{Tipo} & \textbf{Soddisfatti} & \textbf{Non soddisfatti} \\
 		\hline
@@ -460,7 +466,7 @@ Tutti i requisiti delineati durante la fase di analisi sia relativi all'applicaz
 
 
 Per quanto concerne la copertura dei \textit{test}, non era stata richiesta una soglia minima di \textit{Code Coverage}. Per l'applicazione \textit{web}, i \textit{test} effettuati fatti sui metodi principali raggiungono il 70\% di \textit{Code Coverage}, risultato considerato sufficiente dal \textit{tutor} aziendale.
-I \textit{web service}, come descritto in \ref{cap:test}, sono stati testati attraverso il modulo integrato in \textit{Sage X3}.
+I \textit{web service}, come descritto nella sezione \ref{cap:test}, sono stati testati attraverso il modulo integrato in \textit{Sage X3}.
 
 
 %**************************************************************
